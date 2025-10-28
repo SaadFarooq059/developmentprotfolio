@@ -140,9 +140,9 @@ export default function VerticalMarqueeCTA() {
           <div className="flex flex-wrap gap-4 animate-fade-in-up [animation-delay:600ms] justify-center lg:justify-start">
             <ContactPlatforms
               whatsappNumber="447424086524"
-              linkedinUrl="https://linkedin.com/in/saadfarooq"
+              linkedinUrl="https://linkedin.com/in/saadfarooq059"
               telegramUsername="saadfarooq"
-              email="saad.farooq@example.com"
+              email="ceo@krypsec.com"
             />
           
           </div>

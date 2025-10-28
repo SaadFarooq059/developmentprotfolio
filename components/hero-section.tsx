@@ -37,7 +37,7 @@ export function HeroSection() {
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-balance">
                 Saad Farooq
               </h1>
-              <p className="text-xl sm:text-2xl md:text-3xl text-muted-foreground">Web Developer</p>
+              <p className="text-xl sm:text-2xl md:text-3xl text-white">Software Developer</p>
             </div>
 
             <BlurText

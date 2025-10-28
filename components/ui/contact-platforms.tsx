@@ -63,153 +63,16 @@ const FlipLink: React.FC<FlipLinkProps> = ({ children, href, onClick }) => {
   )
 }
 
-// === Platform Icons with Gradients ===
-const PlatformIcons = {
-  whatsapp: () => (
-    <svg
-      width="70"
-      height="70"
-      viewBox="0 0 70 70"
-      className="transition-all duration-500 transform group-hover:scale-110 group-hover:rotate-3"
-    >
-      <defs>
-        <linearGradient id="whatsapp-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#a5b4fc" />
-          <stop offset="100%" stopColor="#c7d2fe" />
-        </linearGradient>
-        <linearGradient id="whatsapp-bg-dark" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#7c3aed" />
-          <stop offset="100%" stopColor="#a855f7" />
-        </linearGradient>
-        <linearGradient id="whatsapp-hover" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#25D366" />
-          <stop offset="100%" stopColor="#128C7E" />
-        </linearGradient>
-      </defs>
-      <rect width="70" height="70" rx="15" fill="url(#whatsapp-bg)" className="dark:opacity-0" />
-      <rect width="70" height="70" rx="15" fill="url(#whatsapp-bg-dark)" className="opacity-0 dark:opacity-100" />
-      <rect
-        width="70"
-        height="70"
-        rx="15"
-        fill="url(#whatsapp-hover)"
-        className="opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-      />
-      <path
-        d="M35 15C24.5 15 16 23.5 16 34C16 37.5 17 40.8 18.7 43.6L16.2 52.8L25.7 50.4C28.4 51.9 31.6 52.8 35 52.8C45.5 52.8 54 44.3 54 33.8C54 23.3 45.5 15 35 15ZM44.5 41.5C44.1 42.7 42.2 43.7 41.1 43.9C40.3 44 39.3 44.1 38.2 43.7C37.5 43.5 36.6 43.2 35.5 42.7C30.3 40.5 27 35.3 26.7 34.9C26.4 34.5 24.5 31.9 24.5 29.2C24.5 26.5 25.9 25.2 26.4 24.6C26.9 24 27.5 23.9 27.9 23.9C28.2 23.9 28.5 23.9 28.8 23.9C29.1 23.9 29.5 23.8 29.9 24.8C30.3 25.8 31.3 28.5 31.4 28.7C31.5 28.9 31.6 29.2 31.4 29.6C31.2 30 31.1 30.2 30.8 30.5C30.5 30.8 30.2 31.2 30 31.4C29.7 31.7 29.4 32 29.7 32.5C30 33 31.3 35.1 33.2 36.8C35.7 39 37.8 39.7 38.3 39.9C38.8 40.1 39.1 40.1 39.4 39.7C39.7 39.3 40.7 38.1 41 37.6C41.3 37.1 41.7 37.2 42.1 37.3C42.5 37.5 45.2 38.8 45.7 39.1C46.2 39.4 46.5 39.5 46.6 39.7C46.7 40.1 46.7 41.1 44.5 41.5Z"
-        className="fill-purple-900 dark:fill-purple-100 group-hover:fill-white transition-colors duration-300"
-      />
-    </svg>
-  ),
-  linkedin: () => (
-    <svg
-      width="70"
-      height="70"
-      viewBox="0 0 70 70"
-      className="transition-all duration-500 transform group-hover:scale-110 group-hover:rotate-3"
-    >
-      <defs>
-        <linearGradient id="linkedin-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#a5b4fc" />
-          <stop offset="100%" stopColor="#c7d2fe" />
-        </linearGradient>
-        <linearGradient id="linkedin-bg-dark" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#7c3aed" />
-          <stop offset="100%" stopColor="#a855f7" />
-        </linearGradient>
-        <linearGradient id="linkedin-hover" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#0077B5" />
-          <stop offset="100%" stopColor="#00A0DC" />
-        </linearGradient>
-      </defs>
-      <rect width="70" height="70" rx="15" fill="url(#linkedin-bg)" className="dark:opacity-0" />
-      <rect width="70" height="70" rx="15" fill="url(#linkedin-bg-dark)" className="opacity-0 dark:opacity-100" />
-      <rect
-        width="70"
-        height="70"
-        rx="15"
-        fill="url(#linkedin-hover)"
-        className="opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-      />
-      <path
-        d="M23 27H17V53H23V27ZM20 24.5C21.9 24.5 23.5 22.9 23.5 21C23.5 19.1 21.9 17.5 20 17.5C18.1 17.5 16.5 19.1 16.5 21C16.5 22.9 18.1 24.5 20 24.5ZM53 53H47V40.5C47 38.3 47 35.5 43.9 35.5C40.8 35.5 40.3 37.8 40.3 40.3V53H34.3V27H40V29.7H40.1C40.9 28.2 43 26.6 45.9 26.6C52 26.6 53 30.5 53 35.7V53Z"
-        className="fill-purple-900 dark:fill-purple-100 group-hover:fill-white transition-colors duration-300"
-      />
-    </svg>
-  ),
-  telegram: () => (
-    <svg
-      width="70"
-      height="70"
-      viewBox="0 0 70 70"
-      className="transition-all duration-500 transform group-hover:scale-110 group-hover:rotate-3"
-    >
-      <defs>
-        <linearGradient id="telegram-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#a5b4fc" />
-          <stop offset="100%" stopColor="#c7d2fe" />
-        </linearGradient>
-        <linearGradient id="telegram-bg-dark" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#7c3aed" />
-          <stop offset="100%" stopColor="#a855f7" />
-        </linearGradient>
-        <linearGradient id="telegram-hover" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#0088cc" />
-          <stop offset="100%" stopColor="#00aced" />
-        </linearGradient>
-      </defs>
-      <rect width="70" height="70" rx="15" fill="url(#telegram-bg)" className="dark:opacity-0" />
-      <rect width="70" height="70" rx="15" fill="url(#telegram-bg-dark)" className="opacity-0 dark:opacity-100" />
-      <rect
-        width="70"
-        height="70"
-        rx="15"
-        fill="url(#telegram-hover)"
-        className="opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-      />
-      <path
-        d="M51.3 19.2L15.8 32.5C13.5 33.4 13.5 34.7 15.3 35.3L23.5 37.9L45.2 24.8C46.2 24.2 47.1 24.5 46.4 25.2L28.9 41.3H28.9L28.9 41.3L28.4 49.8C29.2 49.8 29.5 49.5 29.9 49.1L33.9 45.2L42.2 51.3C43.7 52.1 44.8 51.7 45.2 49.8L51.8 22.3C52.4 20 51 19.1 51.3 19.2Z"
-        className="fill-purple-900 dark:fill-purple-100 group-hover:fill-white transition-colors duration-300"
-      />
-    </svg>
-  ),
-  email: () => (
-    <svg
-      width="70"
-      height="70"
-      viewBox="0 0 70 70"
-      className="transition-all duration-500 transform group-hover:scale-110 group-hover:rotate-3"
-    >
-      <defs>
-        <linearGradient id="email-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#a5b4fc" />
-          <stop offset="100%" stopColor="#c7d2fe" />
-        </linearGradient>
-        <linearGradient id="email-bg-dark" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#7c3aed" />
-          <stop offset="100%" stopColor="#a855f7" />
-        </linearGradient>
-        <linearGradient id="email-hover" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#ea4335" />
-          <stop offset="100%" stopColor="#fbbc04" />
-        </linearGradient>
-      </defs>
-      <rect width="70" height="70" rx="15" fill="url(#email-bg)" className="dark:opacity-0" />
-      <rect width="70" height="70" rx="15" fill="url(#email-bg-dark)" className="opacity-0 dark:opacity-100" />
-      <rect
-        width="70"
-        height="70"
-        rx="15"
-        fill="url(#email-hover)"
-        className="opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-      />
-      <path
-        d="M52 22C52 19.8 50.2 18 48 18H22C19.8 18 18 19.8 18 22V48C18 50.2 19.8 52 22 52H48C50.2 52 52 50.2 52 48V22ZM48 22L35 31.5L22 22H48ZM48 48H22V26L35 35.5L48 26V48Z"
-        className="fill-purple-900 dark:fill-purple-100 group-hover:fill-white transition-colors duration-300"
-      />
-    </svg>
-  ),
-}
+// === Platform Icon Component (uses external SVG files) ===
+const PlatformIcon = ({ src, alt }: { src: string; alt: string }) => (
+  <div className="relative w-[70px] h-[70px] rounded-2xl overflow-hidden bg-gradient-to-br from-purple-200 to-purple-300 dark:from-purple-700 dark:to-purple-900 p-3 transition-all duration-500 transform group-hover:scale-110 group-hover:rotate-3 group-hover:from-purple-500 group-hover:to-purple-600 group-hover:shadow-lg group-hover:shadow-purple-500/50">
+    <img 
+      src={src} 
+      alt={alt} 
+      className="w-full h-full object-contain filter brightness-0 dark:brightness-100 group-hover:brightness-100 transition-all duration-300"
+    />
+  </div>
+)
 
 // === Main Contact Platforms Component ===
 interface ContactPlatformsProps {
@@ -235,22 +98,22 @@ export default function ContactPlatforms({
   const platforms = [
     {
       name: "WhatsApp",
-      icon: PlatformIcons.whatsapp,
+      iconSrc: "/whatsapp.svg", // Place your whatsapp.svg in public folder
       href: `https://wa.me/${whatsappNumber}`,
     },
     {
       name: "LinkedIn",
-      icon: PlatformIcons.linkedin,
+      iconSrc: "/linkedin.svg", // Place your linkedin.svg in public folder
       href: linkedinUrl,
     },
     {
       name: "Telegram",
-      icon: PlatformIcons.telegram,
+      iconSrc: "/telegram.svg", // Place your telegram.svg in public folder
       href: `https://t.me/${telegramUsername}`,
     },
     {
       name: "Email",
-      icon: PlatformIcons.email,
+      iconSrc: "/email.svg", // Place your email.svg in public folder
       href: `mailto:${email}`,
     },
   ]
@@ -327,14 +190,16 @@ export default function ContactPlatforms({
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: index * 0.15, duration: 0.5 }}
-                className="group flex items-center gap-8 md:gap-12"
+                className="group flex items-center justify-start gap-8 md:gap-12 w-full max-w-2xl"
               >
-                <div className="transition-transform duration-500 group-hover:translate-x-[-12px]">
-                  <platform.icon />
+                <div className="flex-shrink-0 transition-transform duration-500 group-hover:translate-x-[-12px]">
+                  <PlatformIcon src={platform.iconSrc} alt={platform.name} />
                 </div>
-                <FlipLink href={platform.href} onClick={() => setIsOpen(false)}>
-                  {platform.name}
-                </FlipLink>
+                <div className="flex-1 min-w-0">
+                  <FlipLink href={platform.href} onClick={() => setIsOpen(false)}>
+                    {platform.name}
+                  </FlipLink>
+                </div>
               </motion.div>
             ))}
           </motion.div>

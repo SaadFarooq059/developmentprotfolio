@@ -107,7 +107,7 @@ export const BlurText = ({
   const times = Array.from({ length: stepCount }, (_, i) => (stepCount <= 1 ? 0 : i / (stepCount - 1)))
 
   return (
-    <p ref={ref} className={className} style={{ display: "flex", flexWrap: "wrap", alignItems: "center" }}>
+    <p ref={ref} className={`text-white ${className}`} style={{ display: "flex", flexWrap: "wrap", alignItems: "center" }}>
       {elements.map((segment, index) => {
         const animateKeyframes = buildKeyframes(fromSnapshot, toSnapshots)
 
